@@ -1,0 +1,66 @@
+@media screen and ( min-width: 768px )
+
+  .navbar
+    display: flex
+    //background-color: rgb(61, 89, 208)
+    padding: 0
+    //z-index: auto
+    align-items: center
+
+  .landing-mobile
+    display: none
+
+  .nav-entry .nav-group-link, .nav-link-nosub
+    display: inline-block
+
+  .nav-list
+    list-style-type: none
+    background-color: inherit
+    height: auto
+    margin: auto
+    padding: 0
+    transform: none
+    z-index: 1
+    top: auto
+
+  .nav-entry
+    float: left
+
+  .nav-link,
+  .nav-link-nosub
+    color: white
+    display: inline-block
+    padding: 14px 16px
+    opacity: 1
+    margin: 0
+    text-align: center
+    text-decoration: none
+
+  .nav-link:hover,
+  .nav-link-nosub:hover,
+  .nav-group:hover .nav-group-link
+    background-color: rgb(180, 180, 180)
+
+  .nav-group-content
+    background-color: #f9f9f9
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2)
+    display: none
+    min-width: 160px
+    position: absolute
+    z-index: 1
+
+  .nav-group-content a
+    color: black
+    display: block
+    padding: 12px 16px
+    text-align: left
+    text-decoration: none
+
+  .nav-group-content a:hover
+    background-color: #f1f1f1
+
+  .nav-group:hover .nav-group-content
+    display: block
+
+  .burger
+    display: none

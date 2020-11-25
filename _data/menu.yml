@@ -1,0 +1,32 @@
+# Menu structure
+
+- name:   About GaitQ
+  url:    /#/
+  menu: 1
+  submenu:
+    - name: Our Story
+      url:  /our_story/
+    - name: Team
+      url:  /team/
+    - name: Advisors
+      url:  /advisors/
+    - name: Partners
+      url:  /partners/
+
+
+- name:   For Patients
+  url:    /patients/
+  menu: 2
+
+- name:   For Clinicians
+  url:    /clinicians/
+  menu: 2
+
+
+- name:   Privacy
+  url:    /privacy-policy/
+  menu: 3
+
+- name:   Terms
+  url:    /terms/
+  menu: 3

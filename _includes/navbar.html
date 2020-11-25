@@ -1,0 +1,32 @@
+<nav class="navbar">
+  <ul class="nav-list">
+
+    {% for item in site.data.menu %}
+    {% if item.menu == 1 %}
+    <li class="nav-entry nav-group">
+      <a href="{{ item.url }}" class="nav-group-link nav-link">{{ item.name }}</a>
+      <div class="nav-group-content">
+        {% for sub in item.submenu %}
+        <a class="nav-link" href="{{ sub.url }}">{{ sub.name }}</a>
+        {% endfor %}
+      </div>
+    </li>
+    {% endif %}
+    {% endfor %}
+
+    {% for item in site.data.menu %}
+    {% if item.menu == 2 %}
+    <li class="nav-entry">
+      <a href="{{ item.url }}" class="nav-link-nosub">{{ item.name }}</a>
+    </li>
+    {% endif %}
+    {% endfor %}
+
+  </ul>
+
+  <div class="burger">
+    <div class="burger-line-1"></div>
+    <div class="burger-line-2"></div>
+    <div class="burger-line-3"></div>
+  </div>
+</nav>

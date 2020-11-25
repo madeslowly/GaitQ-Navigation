@@ -1,0 +1,52 @@
+// GaitQ project
+
+// Default styles for the navigation.
+// We are displaying submenu items in the burger list, whilst no-subs are displayed as large quarter screen buttons (divs)
+
+// Immediatley visible top block
+.navbar
+  align-items: center
+  background-color: $navbar-color
+  display: flex
+  height: $navbar-height
+  justify-content: space-between
+  position: fixed
+  top: 0
+  white-space: nowrap
+  width: 100%
+  z-index: 9999
+
+// Hidden list of submenu items taken from _data/menu.yml >> submenu items
+.nav-list
+  background-color: $navbar-color
+  border-bottom-left-radius: 80px
+  font-size: 1.3rem
+  height: $nav-list-height
+  list-style: none
+  margin: 0
+  padding: $navbar-height 0 0 5vw
+  position: absolute
+  right: 0
+  top: 0
+  transform: translateX(100%)
+  transition: $nav-slider-transition
+  width: 95vw
+  z-index: -1
+
+.nav-entry .nav-group-link, .nav-link-nosub
+  display: none
+
+.nav-link
+  margin: 6vh 15vw
+  opacity: 0
+  display: inline-block
+  color: $nav-link-color
+  text-decoration: none
+
+.nav-group-content .nav-link
+  display: block
+
+.nav-active
+  // we toggle this class in mobile-nav-slider.js on burger click
+  // ensure links are always white since our active bg color is dark
+  transform: translateX(0%)
