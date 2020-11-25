@@ -1,0 +1,11 @@
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+.DS_Store
+.htaccess
+/assets/dev
+notes.md
+node_modules
+deploy-key
+deploy-key.pub
