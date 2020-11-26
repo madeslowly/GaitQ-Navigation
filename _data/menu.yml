@@ -1,6 +1,6 @@
 # Menu structure
 
-- name:   About GaitQ
+- name:   GaitQ
   url:    /#/
   menu: 1
   submenu:

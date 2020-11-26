@@ -5,13 +5,15 @@
 // The mobile.sass is loaded first whilst a breakpoint controls the desktop.sass
 
 
-// Dimesions
+// ************* Dimesions *************
 
-$navbar-height: 10vh // Applies to ALL displays
+// Applies to ALL displays
+$navbar-height: 10vh
 
+// change .nav-list.height manually in _sass/navbar/mobile.sass, can't figure out how to use calc --vh whith sass var
 $nav-list-height: 100vh - $navbar-height
 
-// Colours
+// ************* Colours *************
 
 $navbar-color: rgb(59, 143, 219)
 
@@ -19,6 +21,6 @@ $nav-link-color: rgb(255, 255, 255)
 
 $burger-color: rgb(255, 255, 255)
 
-// Animations
+// ************* Animations *************
 
 $nav-slider-transition: transform .4s ease-in
