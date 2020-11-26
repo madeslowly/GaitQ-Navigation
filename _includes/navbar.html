@@ -5,11 +5,13 @@
     {% if item.submenu %}
     <li class="nav-entry nav-group">
       <a href="{{ item.url | relative_url }}" class="nav-group-link nav-link"><span>{{ item.name }}</span></a>
+      {% if page.title != item.name %}
       <div class="nav-group-content">
         {% for sub in item.submenu %}
         <a class="nav-link" href="{{ sub.url | relative_url }}"><span>{{ sub.name }}</span></a>
         {% endfor %}
       </div>
+      {% endif %}
     </li>
     {% else %}
     <li class="nav-entry">

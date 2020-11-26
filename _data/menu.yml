@@ -17,6 +17,15 @@ landing:
 
   - name:   For Patients
     url:    /patients/
+    submenu:
+      - name:   Patient Link 1
+        url:    /#/
+
+      - name:   Patient Link 2
+        url:    /#/
+
+      - name:   Patient Link 3
+        url:    /#/
 
   - name:   For Clinicians
     url:    /clinicians/
