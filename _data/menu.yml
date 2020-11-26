@@ -1,32 +1,52 @@
 # Menu structure
 
-- name:   GaitQ
-  url:    /#/
-  menu: 1
-  submenu:
-    - name: Our Story
-      url:  /our_story/
-    - name: Team
-      url:  /team/
-    - name: Advisors
-      url:  /advisors/
-    - name: Partners
-      url:  /partners/
+landing:
+
+  - name:   GaitQ
+    url:    /#/
+    submenu:
+      - name: Our Story
+        url:  /our_story/
+      - name: Team
+        url:  /team/
+      - name: Advisors
+        url:  /advisors/
+      - name: Partners
+        url:  /partners/
 
 
-- name:   For Patients
-  url:    /patients/
-  menu: 2
+  - name:   For Patients
+    url:    /patients/
 
-- name:   For Clinicians
-  url:    /clinicians/
-  menu: 2
+  - name:   For Clinicians
+    url:    /clinicians/
 
+patient:
 
-- name:   Privacy
-  url:    /privacy-policy/
-  menu: 3
+  - name:   Patient Link 1
+    url:    /#/
 
-- name:   Terms
-  url:    /terms/
-  menu: 3
+  - name:   Patient Link 2
+    url:    /#/
+
+  - name:   Patient Link 3
+    url:    /#/
+
+clinician:
+
+  - name:   Clinician Link 1
+    url:    /#/
+
+  - name:   Clinician Link 2
+    url:    /#/
+
+  - name:   Clinicians Link 3
+    url:    /#/
+
+legals:
+
+  - name:   Privacy
+    url:    /privacy-policy/
+
+  - name:   Terms
+    url:    /terms/

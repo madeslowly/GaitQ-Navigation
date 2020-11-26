@@ -1,0 +1,11 @@
+<div class="secondary-navbar">
+  <ul class="">
+
+    {% for item in site.data.menu.patient %}
+    <li class="">
+      <a href="{{ item.url }}" class="">{{ item.name }}</a>
+    </li>
+
+    {% endfor %}
+
+  </ul>

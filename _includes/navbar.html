@@ -1,23 +1,19 @@
 <nav class="navbar">
   <ul class="nav-list">
 
-    {% for item in site.data.menu %}
+    {% for item in site.data.menu.landing %}
     {% if item.submenu %}
     <li class="nav-entry nav-group">
-      <a href="{{ item.url }}" class="nav-group-link nav-link">{{ item.name }}</a>
+      <a href="{{ item.url | relative_url }}" class="nav-group-link nav-link"><span>{{ item.name }}</span></a>
       <div class="nav-group-content">
         {% for sub in item.submenu %}
-        <a class="nav-link" href="{{ sub.url }}">{{ sub.name }}</a>
+        <a class="nav-link" href="{{ sub.url | relative_url }}"><span>{{ sub.name }}</span></a>
         {% endfor %}
       </div>
     </li>
-    {% endif %}
-    {% endfor %}
-
-    {% for item in site.data.menu %}
-    {% if item.menu == 2 %}
+    {% else %}
     <li class="nav-entry">
-      <a href="{{ item.url }}" class="nav-link-nosub">{{ item.name }}</a>
+      <a href="{{ item.url | relative_url }}" class="nav-link-nosub">{{ item.name }}</a>
     </li>
     {% endif %}
     {% endfor %}
