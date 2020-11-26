@@ -36,18 +36,42 @@
     text-align: center
     text-decoration: none
 
+  .nav-link,
+  .nav-link-nosub,
+  .nav-group .nav-group-link
+    transition: $nav-hover
+
   .nav-link:hover,
   .nav-link-nosub:hover,
   .nav-group:hover .nav-group-link
-    background-color: rgb(180, 180, 180)
+    background-color: $nav-link-bg-color
+    transition: $nav-hover
 
   .nav-group-content
-    background-color: #f9f9f9
+    background-color: rgb(255, 255, 255)
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2)
     display: none
     min-width: 160px
     position: absolute
-    z-index: 1
+    border-radius: 4px
+    z-index: 2
+    //transform: translateY(10px)
+
+    &:before
+      background: #fff
+      boxshadow: none
+      content: ""
+      display: block
+      height: 16px
+      width: 16px
+      left: 5px
+      position: absolute
+      bottom: 100%
+      border-radius: 2px
+      transform: rotate(-45deg) translateY(14px)
+      z-index: 1
+
+
 
   .nav-group-content a
     color: black
@@ -56,11 +80,12 @@
     text-align: left
     text-decoration: none
 
-  .nav-group-content a:hover
+  .nav-group-content .nav-link:hover
     background-color: #f1f1f1
 
   .nav-group:hover .nav-group-content
     display: block
+
 
   .burger
     display: none
