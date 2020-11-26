@@ -3,49 +3,49 @@
 primary:
 
   - name:   GaitQ
-    url:    #/
+    url:    /index.html
     reach: global
     submenu:
       - name: Our Story
-        url:  /our_story/
+        url:  /our_story.html
       - name: Team
-        url:  /team/
+        url:  /team.html
       - name: Advisors
-        url:  /advisors/
+        url:  /advisors.html
       - name: Partners
-        url:  /partners/
+        url:  /partners.html
 
 
   - name:   For Patients
-    url:    /patients/
+    url:    /patients.html
     reach: local
     submenu:
       - name:   Patient Link 1
-        url:    /patients/
+        url:    /patients.html
 
       - name:   Patient Link 2
-        url:    /patients/
+        url:    /patients.html
 
       - name:   Patient Link 3
-        url:    /patients/
+        url:    /patients.html
 
   - name:   For Clinicians
-    url:    /clinicians/
+    url:    /clinicians.html
     reach: local
     submenu:
       - name:   Clinician Link 1
-        url:    /clinicians/
+        url:    /clinicians.html
 
       - name:   Clinician Link 2
-        url:    /clinicians/
+        url:    /clinicians.html
 
       - name:   Clinicians Link 3
-        url:    /clinicians/
+        url:    /clinicians.html
 
 legals:
 
   - name:   Privacy
-    url:    /privacy-policy/
+    url:    /privacy-policy.html
 
   - name:   Terms
-    url:    /terms/
+    url:    /terms.html
