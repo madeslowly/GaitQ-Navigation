@@ -2,7 +2,7 @@
   <ul class="nav-list">
 
     {% for item in site.data.menu %}
-    {% if item.menu == 1 %}
+    {% if item.submenu %}
     <li class="nav-entry nav-group">
       <a href="{{ item.url }}" class="nav-group-link nav-link">{{ item.name }}</a>
       <div class="nav-group-content">
