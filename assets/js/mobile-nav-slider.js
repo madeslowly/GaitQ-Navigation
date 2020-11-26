@@ -2,7 +2,7 @@ const navSlide = ()=>{
   const burger = document.querySelector('.burger');
   const navSlider = document.querySelector('.nav-list');
   const navLinks = document.querySelectorAll('.nav-link');
-  const navBar = document.querySelector('nav');
+  const navBar = document.querySelector('.navbar');
 
   // watch for touch clicks on the whole navbar
   navBar.addEventListener('click', () => {
