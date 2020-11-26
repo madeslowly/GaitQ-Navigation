@@ -13,7 +13,7 @@ const navSlide = ()=>{
       if ( link.style.animation ) {
         link.style.animation = ``
       } else {
-        link.style.animation = `navLinksFade 0.25s ease-in forwards ${index / 10 + 0.1 }s`
+        link.style.animation = `navLinksFade 0.25s ease-in forwards ${index / 10 + 0.02 }s`
       }
     });
   });

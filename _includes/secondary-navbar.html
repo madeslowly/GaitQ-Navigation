@@ -1,0 +1,14 @@
+<div class="secondary-navbar">
+  <ul class="">
+    {% for item in site.data.menu.primary %}
+    {% if item.name == page.menu %}
+    {% for sub in item.submenu %}
+    <li class="">
+      <a href="{{ sub.url | relative_url }}" class="">{{ sub.name }}</a>
+    </li>
+    {% endfor %}
+    {% endif %}
+    {% endfor %}
+
+  </ul>
+</div>

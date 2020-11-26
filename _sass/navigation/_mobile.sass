@@ -36,20 +36,20 @@
   width: 95vw
   z-index: -1
 
-.nav-entry .nav-group-link, .nav-link-nosub
-  display: none
-
 .nav-link
   margin: 6vh 15vw
   opacity: 0
-  display: inline-block
   color: $nav-link-color
   text-decoration: none
-
-.nav-group-content .nav-link
-  display: block
+  display: flex
 
 .nav-active
   // we toggle this class in mobile-nav-slider.js on burger click
   // ensure links are always white since our active bg color is dark
   transform: translateX(0%)
+
+.nav-group-link.global
+  display: none
+
+.nav-group-content.local
+  display: none
