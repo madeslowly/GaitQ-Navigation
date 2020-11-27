@@ -1,5 +1,5 @@
 ---
 layout: global
-title: The Story of GaitQ
-env: gaitq
+title:  The Story of GaitQ
+env:    gaitq
 ---

@@ -1,6 +1,5 @@
 ---
-layout: clinicians
-title: For Clinicians
-menu: For Clinicians
-env: clinicians
+layout:   clinicians
+title:    For Clinicians
+env:      clinicians
 ---

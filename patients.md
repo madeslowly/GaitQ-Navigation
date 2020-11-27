@@ -1,6 +1,5 @@
 ---
-layout: patients
-title: For Patients
-menu: For Patients
-env: patients
+layout:   patients
+title:    For Patients
+env:      patients
 ---

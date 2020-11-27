@@ -1,5 +1,5 @@
 ---
-layout: global
-title: GaitQ
-env: gaitq
+layout:   global
+title:    GaitQ
+env:      gaitq
 ---

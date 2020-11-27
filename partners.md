@@ -1,5 +1,5 @@
 ---
-layout: global
-title: Our Partners
-env: gaitq
+layout:   global
+title:    Our Partners
+env:      gaitq
 ---
