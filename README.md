@@ -77,9 +77,6 @@ group_name:
         url:  /pageURL.html
 ```
 
-sDYGFLIUADGF
-
-
 We for loop  `group_name` = `navigation`. The `env:` controls where and how we see the navigation link and it's submenu contents. Currently we have three allowable `envs:`, `gaitq`, `clinicians` and `patients`.
 
 ---
