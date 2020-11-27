@@ -1,16 +1,16 @@
+// Navigation styling for medium and up displays
+
+// Everything here will be included in EVERY .html
+
 @media screen and ( min-width: 768px )
 
   .navbar
-    display: flex
+    display: absolute
     background-color: $navbar-color
     padding: 0
     //z-index: auto
-    align-items: center
     min-height: 0
     height: $navbar-height
-
-  .landing-mobile
-    display: none
 
   .nav-list
     display: flex
@@ -18,80 +18,38 @@
     list-style-type: none
     background-color: inherit
     height: inherit
-    margin: auto
+    width: 100vw
     padding: 0
     transform: none
     z-index: 1
-    top: auto
 
-  .nav-entry .nav-group-link, .nav-link-nosub, .nav-group-content .nav-link
-    display: flex
-
-  .nav-link,
-  .nav-link-nosub
+  .nav-link
     color: white
-    display: flex
     align-items: center
     padding: 0 10px
     height: $navbar-height
     opacity: 1
     margin: 0
-    text-align: center
     text-decoration: none
 
-  .nav-link,
-  .nav-link-nosub,
-  .nav-group .nav-group-link
+  .nav-group-link
     transition: $nav-hover
 
-  .nav-link:hover,
-  .nav-link-nosub:hover,
-  .nav-group:hover .nav-group-link
+  .nav-group-link:hover
     background-color: $nav-link-bg-color
     transition: $nav-hover
 
   .nav-group-content
-    background-color: rgb(255, 255, 255)
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2)
-    display: none
-    min-width: 160px
     position: absolute
-    border-radius: 4px
-    z-index: 1
-    //transform: translateY(10px)
-
-    &:before
-      background: inherit
-      boxshadow: none
-      content: ""
-      display: block
-      height: 16px
-      width: 16px
-      left: 5px
-      position: absolute
-      bottom: 100%
-      border-radius: 2px
-      transform: rotate(-45deg) translateY(14px)
-      z-index: -1
-
-  .nav-group-content a
-    color: black
-    display: block
-    padding: 0
-    padding-left: 1rem
-    text-align: left
-    text-decoration: none
-    font-size: $font-size * .9
 
   .nav-group-content .nav-link
+    color: black
+    padding: 0
+    padding-left: 1rem
+    padding: 10px 40px 0 10px
+    text-align: left
+    font-size: $font-size * .9
     height: 5rem
-
-  .nav-group-content .nav-link:hover
-    background-color: #f1f1f1
-
-  .nav-group:hover .nav-group-content
-    display: block
-
 
   .burger
     display: none

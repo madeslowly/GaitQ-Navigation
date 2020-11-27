@@ -1,10 +1,10 @@
 # Menu structure
 
-primary:
+navigation:
 
   - name:   GaitQ
     url:    /index.html
-    reach: global
+    env: gaitq
     submenu:
       - name: Our Story
         url:  /our_story.html
@@ -15,10 +15,9 @@ primary:
       - name: Partners
         url:  /partners.html
 
-
   - name:   For Patients
     url:    /patients.html
-    reach: local
+    env: patients
     submenu:
       - name:   Patient Link 1
         url:    /patients.html
@@ -31,7 +30,7 @@ primary:
 
   - name:   For Clinicians
     url:    /clinicians.html
-    reach: local
+    env: clinicians
     submenu:
       - name:   Clinician Link 1
         url:    /clinicians.html

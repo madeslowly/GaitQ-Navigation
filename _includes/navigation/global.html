@@ -1,17 +1,21 @@
 <nav class="navbar">
   <ul class="nav-list">
 
-    {% for item in site.data.menu.primary %}
+    {% for item in site.data.menu.navigation %}
 
-    <li class="nav-entry nav-group">
-      <a href="{{ item.url | relative_url }}" class="nav-group-link nav-link {{ item.reach }}"><span>{{ item.name }}</span></a>
-      {% if page.title != item.name %}
-      <div class="nav-group-content {{ item.reach }}">
+    <li class="nav-group">
+      <a href="{{ item.url | relative_url }}" class="nav-group-link nav-link {{ item.env }}-group-link">
+        <span>{{ item.name }}</span></a>
+
+
+      <div class="nav-group-content {{ item.env }}-group">
         {% for sub in item.submenu %}
-        <a class="nav-link sub-link" href="{{ sub.url | relative_url }}"><span>{{ sub.name }}</span></a>
+        <a class="nav-link sub-link" href="{{ sub.url | relative_url }}">
+          <span>{{ sub.name }}</span></a>
+
         {% endfor %}
       </div>
-      {% endif %}
+
     </li>
     {% endfor %}
 
