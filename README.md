@@ -67,15 +67,7 @@ Google Analytics UA and Webmaster Tool verification tags can be entered under `o
 
 To set what links appear in the top navigation edit `_data/menu.yml`. Use the following format to set the URL and title for as many links as you'd like. *External links will open in a new window.*
 
-```yaml
-group_name:
-  - name:  Page name
-    url:   /pageURL.html
-    env:   Owning page environment
-    submenu:
-      - name: Page name
-        url:  /pageURL.html
-```
+
 
 We for loop  `group_name` = `navigation`. The `env:` controls where and how we see the navigation link and it's submenu contents. Currently we have three allowable `envs:`, `gaitq`, `clinicians` and `patients`.
 ---
