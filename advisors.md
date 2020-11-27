@@ -1,4 +1,4 @@
 ---
-layout: gaitq
+layout: global
 title: Our Advisors
 ---

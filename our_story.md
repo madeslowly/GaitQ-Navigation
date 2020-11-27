@@ -1,4 +1,4 @@
 ---
-layout: gaitq
+layout: global
 title: The Story of GaitQ
 ---

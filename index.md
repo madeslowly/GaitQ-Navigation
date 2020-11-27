@@ -1,3 +1,4 @@
 ---
 layout: global
+title: GaitQ
 ---
