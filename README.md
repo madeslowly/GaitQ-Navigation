@@ -79,23 +79,3 @@ group_name:
 
 We for loop  `group_name` = `navigation`. The `env:` controls where and how we see the navigation link and it's submenu contents. Currently we have three allowable `envs:`, `gaitq`, `clinicians` and `patients`.
 ---
-
-
-## Layouts and Content
-
-Explanations of the various `_layouts` included with the theme and when to use them.
----
-
-### Post and Page
-
----
-
-## Twitter Cards
-
-Feature and thumbnail images are used by [Open Graph](https://developers.facebook.com/docs/opengraph/) and [Twitter Cards](https://dev.twitter.com/docs/cards) as well. If you don't assign a thumbnail the site logo is used.
-
-Here's an example of a tweet with Twitter Cards enabled.
-
-![Twitter Card summary large image screenshot]({{ site.url }}/images/twitter-card-summary-large-image.jpg)
-
----
