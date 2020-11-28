@@ -9,7 +9,7 @@ How this repo is organised and what the various files are. All posts, layouts, i
 ```
 GaitQ/
 |
-├─ _includes/                     # `HTML and Liquid`
+├─ _includes/                     # *HTML and Liquid*
 |  |
 |  ├─ head/                       # All header content
 |  |  |
