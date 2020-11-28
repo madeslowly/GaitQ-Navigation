@@ -9,7 +9,13 @@ How this repo is organised and what the various files are. All posts, layouts, i
 ```
 GaitQ/
 |
-├─ _includes/                     # *HTML and Liquid*
+├─ _config.yml/                   # Jekyll build settings, site. ...
+|
+├─ _data/                         # Site wide data, site.data. ...
+|  |
+|  ├─ menu.yml                    # Menu structure for GaitQ.com
+|
+├─ _includes/                     # HTML and Liquid templating
 |  |
 |  ├─ head/                       # All header content
 |  |  |
@@ -28,13 +34,13 @@ GaitQ/
 |  |  |
 |  |  ├─ head.html                # <head> routine with URL conditions
 |  |
-|  ├─ navigation/                 # <nav> routines
+|  ├─ navigation/                 # HTML and Liquid templating
 |  |  |
 |  |  ├─ global.html              # <nav> routine with URL conditions
 |  |
 |  ├─ scripts.html                # JS scripts & closing body & html
 |
-├─ _layouts/                      # HTML structures
+├─ _layouts/                      # HTML and Liquid templating
 |  |
 |  ├─ enviroments/                # URL specific
 |  |  |
@@ -48,8 +54,40 @@ GaitQ/
 |
 ├─ _posts/                        # Blog entries, undeveloped
 |
-├─ _sass/                         # Blog entries, undeveloped
-
+├─ _sass/                         # Sass partials
+|  |
+|  ├─ navigation/                 # All header content
+|  |  |
+|  |  ├─ _variable.sass           # <nav> settings
+|  |  ├─ burger.sass              # Mobile burger
+|  |  ├─ mobile.sass              # Default nav CSS
+|  |  ├─ desktop.sass             # Breakpoint 768 CSS
+|  |  ├─ clinicians.sass          # Clinicians nav CSS & Breakpoint 768
+|  |  ├─ patients.sass            # Patients nav CSS & Breakpoint 768
+|  |  ├─ gaitq.sass               # GaitQ nav CSS & Breakpoint 768
+|  |
+|  ├─ typography/                 # All header content
+|  |  |
+|  |  ├─ _variable.sass           # Typography settings
+|  |  ├─ resets.sass              # User agent resets
+|  |
+|  ├─ landing.sass                # Landing page
+|
+├─ assets/                        # HTML and Liquid templating
+|  |
+|  ├─ css/                        # Sass imports
+|  |  |
+|  |  ├─ gaitq_global.sass        # Global CSS, included on ALL pages
+|  |  ├─ gaitq_gaitq.sass         # GaitQ env CSS
+|  |  ├─ gaitq_patients.sass      # Patient env CSS
+|  |  ├─ gaitq_clinician.sass     # Clinician env CSS
+|  |  ├─ gaitq_landing.sass       # Landing page CSS
+|  |
+|  ├─ img/                        # All our imagery
+|  |
+|  ├─ JS/                         # All our JavaScript
+|  |
+|  ├─ vendor/                     # Third party CSS and JS code, never edit! If we need to overwrite something we add our own CSS or JS to do so.
 ```
 
 ---
