@@ -8,8 +8,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <title>
-    {% if page.url == "/" %} {{ site.title }} | {{ site.subtitle }}
-    {% else %} {{ page.title }} | {{ site.title }} {% endif %}
+    {% if page.title %} {{ page.title }} | {{ site.title }}
+    {% else %} {{ site.title }} | {{ site.subtitle }} {% endif %}
   </title>
 
   {% include head/descriptors/structured-data.html %}

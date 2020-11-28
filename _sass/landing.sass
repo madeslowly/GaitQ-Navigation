@@ -1,15 +1,19 @@
 
+$landing-height: 90vh - $navbar-height
+
 .landing-wraper
   // fallback
+  //top: $navbar-height
   background-color: white
   background-image: url($baseurl + 'assets/img/masthead_mobile.jpg')
   background-position: top
   background-repeat: no-repeat
-  background-size: auto 90vh
+  background-size: auto $landing-height
   height: 100vh
-  max-height: 100vh
+  //max-height: 100vh
   display: flex
   align-items: flex-end
+  //margin-top: 10vh
 
 
 .landing-content
@@ -20,5 +24,5 @@
   padding: 3rem
   //height: 30vh
   width: 100vw
-  background-color: $nhs-green
+  background-color: $opd-confidence-strong
   color: rgb(255, 255, 255)

@@ -1,6 +1,6 @@
-# Jekyll Project for GaitQ
+# Jekyll project for GaitQ
 
-This repo only deals with the website navigation and structure. We have three distinctive environments, general GaitQ pages, content that is specific to a customer of GaitQ and content for professionals and technically curious.
+This repo only deals with the website navigation and structure. We have three distinctive environments, general GaitQ pages, content that is specific to a customer of GaitQ and content for professionals and the technically curious.
 
 ## Scaffolding
 
@@ -89,20 +89,34 @@ GaitQ/
 |  |
 |  ├─ vendor/                     # Third party CSS and JS code, never edit! If we need to overwrite something we add our own CSS or JS to do so.
 ```
-
 ---
 
 ### Site Wide Configuration
 
 `_config.yml` is where most variables are set.
 
-#### title
+#### title:
 
-The global title of the site. This is overwritten by page markup `title:`
+The global title of the website.
+
+#### subtitle:
+
+The global subtitle of the website.
+
+Pages are given titles according to
+
+```Liquid
+{% if page.title %}
+  {{ page.title }} | {{ site.title }}
+{% else %}
+  {{ site.title }} | {{ site.subtitle }}
+{% endif %}
+```
+
 
 #### logo
 
-Site wide logo, used as a default image for Twitter Cards and og_image when not defined in Front Matter.
+Site wide logo, used as a default image for Twitter Cards and og_image when not defined in page front matter.
 
 #### url
 
