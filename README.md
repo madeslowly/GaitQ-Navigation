@@ -103,7 +103,9 @@ The global title of the website.
 
 The global subtitle of the website.
 
-Pages are given titles according to
+#### Page Titling
+
+Pages are given titles according to,
 
 ```Liquid
 {% if page.title %}
@@ -113,23 +115,42 @@ Pages are given titles according to
 {% endif %}
 ```
 
+#### description:
 
-#### logo
+Site wide description, used in head description meta, og:description, twitter:description and structured data. Overwritten by page front matter, description:
 
-Site wide logo, used as a default image for Twitter Cards and og_image when not defined in page front matter.
-
-#### url
+#### url:
 
 Used to generate absolute URLs for sitemaps, feeds and for generating canonical URLs in a page's `<head>`. When developing locally either comment this out or use something like `http://localhost:4000` so all assets load properly. *Don't include a trailing `/`*.
 
 Examples:
 
 ```yaml
-url: https://gaitq.github.io
-url: http://localhost:4000
-url: http://www.gaitq.com
-url:
+url: "https://gaitq.github.io"
+url: "http://localhost:4000"
+url: "http://www.gaitq.com"
+url: ""
 ```
+
+#### baseurl:
+
+Used when we are developing a partial.
+
+#### author:
+
+Author of this Jekyll project. Content authors can be added to _data/aithors.yml and assigned in a pages front matter.
+
+#### postal_add:
+
+Postal address of the website owning person or organisation. Used in structured data.
+
+#### opening_hours:
+
+Used in structured data. This lets google know when we are open. 
+
+#### logo
+
+Site wide logo, used as a default image for Twitter and Facebook. Can be over written by a pages front matter: `image`.
 
 #### Google Analytics and Webmaster Tools
 

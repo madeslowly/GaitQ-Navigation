@@ -48,8 +48,12 @@
 -->
 <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
 
-<meta property="og:description" content="{% if page.description == null %} {{ site.description }}
-{% else %} {{ page.description }} {% endif %}" />
+<meta property="og:description" content="
+{% if page.description %}
+  {{ page.description }}
+{% else %}
+  {{ site.description }}
+{% endif %}" />
 
 <meta property="og:locale" content="{{ site.lang }}" />
 

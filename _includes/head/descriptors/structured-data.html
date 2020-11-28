@@ -48,8 +48,8 @@
     "@id":"{{ site.url }}{{ site.baseurl }}{{ page.url }}#webpage",
     "url":"{{ site.url }}{{ site.baseurl }}{{ page.url }}",
     "inLanguage":"en-GB",
-    "name":"{% if page.url == '/' %} {{ site.title }} | {{ site.subtitle }} {% else %} {{ page.title }} | {{ site.title }} {% endif %}",
-    "description": "{% if page.url == '/' %} {{ site.descrition }}{% else %}{{ page.description }}{% endif %}",
+    "name":"{% if page.title %} {{ page.title }} | {{ site.title }} {% else %} {{ site.title }} | {{ site.subtitle }} {% endif %}",
+    "description": "{% if page.description %} {{ page.descrition }}{% else %}{{ site.description }}{% endif %}",
     "datePublished":"{{ page.date }}",
     "dateModified":"{{ 'now' | date_to_xmlschema }}",
     "isPartOf":[{

@@ -16,9 +16,9 @@ keywords:            >-
 
     Parkinson’s disease, gate freezing, health,
 
-baseurl:             "/navbar"
 url:                 "http://gaitq.madeslowly.xyz"
-lang:                en_GB
+
+baseurl:             "/navbar"
 
 # Site author, additional content authors are added in _data/authors.yml
 author:
@@ -96,8 +96,6 @@ sass:
     - node_modules
 
 compress_html:
-  ignore:
-    envs:            development
   comments:          all
 
 autoprefixer:

@@ -8,16 +8,22 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <title>
-    {% if page.title %} {{ page.title }} | {{ site.title }}
-    {% else %} {{ site.title }} | {{ site.subtitle }} {% endif %}
+    {% if page.title %}
+      {{ page.title }} | {{ site.title }}
+    {% else %}
+      {{ site.title }} | {{ site.subtitle }}
+    {% endif %}
   </title>
 
   {% include head/descriptors/structured-data.html %}
 
   <!-- use local page descriptions if it exist -->
   <meta name="description" content="
-  {% if page.description == null %} {{ site.description }}
-  {% else %} {{ page.description }} {% endif %}" />
+  {% if page.description %}
+    {{ page.description }}
+  {% else %}
+    {{ site.description }}
+  {% endif %}" />
 
   <meta name="keywords" content="{{ site.keywords }}" />
 

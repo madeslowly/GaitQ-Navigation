@@ -1,5 +1,5 @@
 ---
 layout:   landing
-title:    GaitQ
+title:
 env:      gaitq
 ---
