@@ -3,48 +3,48 @@
 navigation:
 
   - name:   GaitQ
-    url:    /index.html
+    url:    /
     env: gaitq
     submenu:
       - name: Our Story
-        url:  /our_story.html
+        url:  /our_story/
       - name: Team
-        url:  /team.html
+        url:  /team/
       - name: Advisors
-        url:  /advisors.html
+        url:  /advisors/
       - name: Partners
-        url:  /partners.html
+        url:  /partners/
 
   - name:   For Patients
-    url:    /patients.html
+    url:    /patients/
     env: patients
     submenu:
       - name:   Patient Link 1
-        url:    /patients.html
+        url:    /patients/
 
       - name:   Patient Link 2
-        url:    /patients.html
+        url:    /patients/
 
       - name:   Patient Link 3
-        url:    /patients.html
+        url:    /patients/
 
   - name:   For Clinicians
-    url:    /clinicians.html
+    url:    /clinicians/
     env: clinicians
     submenu:
       - name:   Clinician Link 1
-        url:    /clinicians.html
+        url:    /clinicians/
 
       - name:   Clinician Link 2
-        url:    /clinicians.html
+        url:    /clinicians/
 
       - name:   Clinicians Link 3
-        url:    /clinicians.html
+        url:    /clinicians/
 
 legals:
 
   - name:   Privacy
-    url:    /privacy-policy.html
+    url:    /privacy-policy/
 
   - name:   Terms
-    url:    /terms.html
+    url:    /terms/
