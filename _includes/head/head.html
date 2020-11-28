@@ -39,6 +39,11 @@
   {% if page.env %}
   {% include head/styles/{{ page.env }}.html %}
   {% endif %}
+
+  {% if page.layout == "landing" %}
+  {% include head/styles/landing.html %}
+  {% endif %}
+
   <link rel="shortcut icon" type="image/x-icon" href="{{ site.baseurl }}/{{ site.favicon }}">
 
   {% if jekyll.environment == "production" %}

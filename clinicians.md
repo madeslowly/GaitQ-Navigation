@@ -1,5 +1,5 @@
 ---
-layout:   clinicians
+layout:   enviroments/clinicians
 title:    For Clinicians
 env:      clinicians
 ---

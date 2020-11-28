@@ -1,34 +1,54 @@
 # Jekyll Project for GaitQ
 
-This repo only deals with the website navigation and structure
+This repo only deals with the website navigation and structure. We have three distinctive environments, general GaitQ pages, content that is specific to a customer of GaitQ and content for professionals and technically curious.
 
 ## Scaffolding
 
 How this repo is organised and what the various files are. All posts, layouts, includes, stylesheets, assets, and whatever else is grouped nicely under the root folder. The compiled Jekyll site outputs to `_site/`, which is never pushed to this repo, see https://www.gaitq.madeslowly.xyz/navbar.
 
 ```
-/
-├── _includes/
-|    ├── head/                              # All header content
-|        ├── descriptor/                    # Site wide descriptions
-|        |   ├── og-meta.html
-|        |   ├── structured-data.html
-|        |   ├── twitter-meta.html
-|        |    
-|        ├── styles/                        # Global and local styles
-|        |   ├── global.html
-|        |   ├── gaitq.html
-|        |   ├── patients.html
-|        |   ├── clinicians.html
-|        |    
-|        ├── head.html                       # <head> routine
+GaitQ/
 |
-|    ├── navigation/                         # Topbar navigation, we may need to add more routines here
-|        ├── global.html                     # <nav> routine
+├─ _includes/                     # `HTML and Liquid`
+|  |
+|  ├─ head/                       # All header content
+|  |  |
+|  |  ├─ descriptor/              # Site wide descriptions
+|  |  |  |
+|  |  |  ├─ og-meta.html
+|  |  |  ├─ structured-data.html
+|  |  |  ├─ twitter-meta.html
+|  |  |    
+|  |  ├─ styles/                  # Global and local styles
+|  |  |  |
+|  |  |  ├─ global.html           # Site wide stylesheets
+|  |  |  ├─ gaitq.html            # URL specific
+|  |  |  ├─ patients.html         # URL specific
+|  |  |  ├─ clinicians.html       # URL specific
+|  |  |
+|  |  ├─ head.html                # <head> routine with URL conditions
+|  |
+|  ├─ navigation/                 # <nav> routines
+|  |  |
+|  |  ├─ global.html              # <nav> routine with URL conditions
+|  |
+|  ├─ scripts.html                # JS scripts & closing body & html
 |
-|    ├── scripts.html                        # All JS scripts followed by body & html closing
+├─ _layouts/                      # HTML structures
+|  |
+|  ├─ enviroments/                # URL specific
+|  |  |
+|  |  ├─ clinicians.html          # Professionals and press
+|  |  ├─ patients.html            # Patients and carers
+|  |  ├─ gaitq.html               # Default for GaitQ submenu
+|  |
+|  ├─ landing.html                # Landing page
+|  |
+|  ├─ default.html                # Final pass for all pages, also this is where Jekyll looks if no Front Matter def
 |
-├── _layouts/
+├─ _posts/                        # Blog entries, undeveloped
+|
+├─ _sass/                         # Blog entries, undeveloped
 
 ```
 
