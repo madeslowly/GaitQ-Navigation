@@ -1,5 +1,15 @@
 <nav class="navbar">
   
+  <div class="nav-brand">
+    <a href="{{ site.baseurl }}/">
+    {% include branding/site-logo.svg %}
+    </a>
+    {% for social in site.data.socials %}
+    <a class="nav-socials nav-{{ social[1].icon }}" href="{{ social[1].url }}{{ social[1].username }}/">
+    <i class="fab fa-{{ social[1].icon }}" title="{{ site.title }} {{ social[1].icon | capitalize }} account"></i>
+    </a>
+    {% endfor %}
+  </div>
   <ul class="nav-list">
 
     {% for item in site.data.menu.navigation %}
