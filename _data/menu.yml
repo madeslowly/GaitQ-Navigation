@@ -19,26 +19,32 @@ navigation:
     url:    /patients/
     env: patients
     submenu:
-      - name:   Patient Link 1
+      - name:   Gait freezing
         url:    /patients/
 
-      - name:   Patient Link 2
+      - name:   Our solution
         url:    /patients/
 
-      - name:   Patient Link 3
+      - name:   Contact
+        url:    /patients/
+
+      - name:   Register for trials
         url:    /patients/
 
   - name:   For Clinicians
     url:    /clinicians/
     env: clinicians
     submenu:
-      - name:   Clinician Link 1
+      - name:   Our technology
         url:    /clinicians/
 
-      - name:   Clinician Link 2
+      - name:   The science
         url:    /clinicians/
 
-      - name:   Clinicians Link 3
+      - name:   Get involved
+        url:    /clinicians/
+
+      - name:   Contact
         url:    /clinicians/
 
 legals:
