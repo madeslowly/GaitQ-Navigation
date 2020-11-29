@@ -5,12 +5,19 @@
 @media screen and ( min-width: 768px )
 
   .navbar
-    display: absolute
+    display: flex
     background-color: $navbar-color
     padding: 0
     //z-index: auto
     min-height: 0
     height: $navbar-height
+    box-shadow: 0 1px 8px $black
+
+  .nav-brand
+    width: 10vw
+    max-width: 140px
+    z-index: 2
+
 
   .nav-list
     display: flex
@@ -18,10 +25,13 @@
     list-style-type: none
     background-color: inherit
     height: inherit
-    width: 100vw
+    //width: 100vw
+    top: 0
+    //width: 70vw
     padding: 0
     transform: none
     z-index: 1
+    border-top: none
 
   .nav-link
     color: white

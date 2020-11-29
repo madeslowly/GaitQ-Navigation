@@ -2,13 +2,11 @@
 
 // Default styles for the navigation.
 
-
 .navbar
   align-items: center
   background-color: $navbar-color
   display: flex
   height: $navbar-height
-  min-height: 50px
   justify-content: space-between
   position: fixed
   top: 0
@@ -16,23 +14,27 @@
   width: 100%
   z-index: 9999
 
-// Hidden list of submenu items taken from _data/menu.yml >> submenu items
+.nav-brand
+  width: 30vw
+  padding-left: 3vw
 
 .nav-list
   background-color: $navbar-color
   border-bottom-left-radius: 80px
+  border-top: solid 1px $white
   font-size: 1.3rem
   height: $nav-list-height
-  height: calc( var(--vh, 1vh) * 96 )
+  height: calc( var(--vh, 1vh) * 90 )
   list-style: none
   margin: 0
-  padding: $navbar-height 0 0 5vw
+  margin-block-start: 0
+  padding: 0
   position: absolute
   right: 0
-  top: 0
+  top: $navbar-height
   transform: translateX(100%)
   transition: $nav-slider-transition
-  width: 95vw
+  width: 100vw
   z-index: -1
 
 .nav-link

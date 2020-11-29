@@ -3,26 +3,112 @@ $landing-height: 90vh - $navbar-height
 
 .landing-wraper
   // fallback
-  //top: $navbar-height
+  top: $navbar-height
   background-color: white
+  //background-image: url($baseurl + 'assets/img/masthead_mobile.jpg')
+  //background-position: center
+  //background-repeat: no-repeat
+  //background-size: auto 80vh
+  height: 100vh - $navbar-height
+  //max-height: 100vh - $navbar-height
+  display: flex
+  //align-items: flex-end
+  position: fixed
+  //margin-top: 10vh
+
+.landing-bg
+  // fallback
+  //top: $navbar-height
+  //background-color: white
   background-image: url($baseurl + 'assets/img/masthead_mobile.jpg')
-  background-position: top
+  //background-position: center
   background-repeat: no-repeat
-  background-size: auto $landing-height
-  height: 100vh
+  background-size: cover
+  height: 90vh - $navbar-height
+  width: 100vw
   //max-height: 100vh
   display: flex
   align-items: flex-end
+  //position: fixed
   //margin-top: 10vh
 
+.landing-content
+
+  margin: 0 2vw 0 25vw
+  padding: 2rem
+  //height: 30vh
+  width: 80vw
+  background-color: $opd-orange-confidence
+  color: $white
+  transform: translateY(8vh)
+  &:after
+    background: inherit
+    boxshadow: none
+    content: ""
+    display: flex
+    height: 16px
+    width: 16px
+    //left: 5px
+    position: absolute
+    //bottom: 100%
+    border-radius: 2px
+    transform: translateY(2vh) rotate(-45deg)
+    z-index: -1
 
 .landing-content
-  display: flex
-  align-items: center
-  flex-direction: column
-  margin: 0 2vw 2vh 25vw
-  padding: 3rem
-  //height: 30vh
-  width: 100vw
-  background-color: $opd-confidence-strong
-  color: rgb(255, 255, 255)
+  span
+    display: none
+
+@media screen and ( min-width: 768px )
+
+  .landing-wraper
+    // fallback
+    top: $navbar-height
+    background-color: $navbar-color
+    //background-image: url($baseurl + 'assets/img/masthead_mobile.jpg')
+    //background-position: center
+    //background-repeat: no-repeat
+    //background-size: auto 80vh
+    height: 100vh - $navbar-height
+    //max-height: 100vh - $navbar-height
+    display: flex
+    align-items: flex-start
+    position: fixed
+    //margin-top: 10vh
+
+  .landing-bg
+    // fallback
+    //top: $navbar-height
+
+    background-image: url($baseurl + 'assets/img/masthead.jpg')
+    background-position: top
+    background-repeat: no-repeat
+    background-size: cover
+    height: 100vh - $navbar-height
+    width: 100vw
+    //margin-left: 20vw
+    //max-height: 100vh
+    display: flex
+    //align-items: flex-end
+    //position: fixed
+    //margin-top: 10vh
+
+  .landing-content
+
+    margin: 0
+    padding:  4rem
+    //padding-left: 5rem
+    //height: 40vh
+    width: 30vw
+    background-color: $opd-orange-confidence
+    color: $white
+    transform: translate(8vw, -10vh)
+    &:after
+
+      display: none
+
+
+
+  .landing-content
+    span
+      display: inline
