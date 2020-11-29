@@ -4,7 +4,6 @@ _site/
 .jekyll-metadata
 .DS_Store
 .htaccess
-.gitignore
 /assets/dev
 notes.md
 node_modules

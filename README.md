@@ -25,32 +25,33 @@ https://github.com/madeslowly/GaitQ-Navigation/
 |  |  |  ├─ structured-data.html
 |  |  |  ├─ twitter-meta.html
 |  |  |    
-|  |  ├─ styles/                  # Global and local styles
+|  |  ├─ styles/                  # Global & local stylesheets, loaded in this order.
 |  |  |  |
-|  |  |  ├─ global.html           # Site wide stylesheets
-|  |  |  ├─ gaitq.html            # URL specific
-|  |  |  ├─ patients.html         # URL specific
-|  |  |  ├─ clinicians.html       # URL specific
+|  |  |  ├─ global.html           # We include gaitq_global.css site wide
+|  |  |  ├─ conditional.html      # Page env: condition --> gaitq_env.css
+|  |  |  ├─ landing.html          # Landing page only --> gaitq_landing.css
 |  |  |
-|  |  ├─ head.html                # <head> routine with URL conditions
+|  |  ├─ head.html                # Routine to collect header partials, page.env and page.layout dependencies
 |  |
 |  ├─ navigation/                 # HTML and Liquid templating
 |  |  |
-|  |  ├─ global.html              # <nav> routine with URL conditions
+|  |  ├─ global.html              # <nav> html. Pulls from site.data.menu
 |  |
-|  ├─ scripts.html                # JS scripts & closing body & html
+|  ├─ scripts.html                # JS scripts & closing body & html tags
 |
 ├─ _layouts/                      # HTML and Liquid templating
 |  |
-|  ├─ enviroments/                # URL specific
+|  ├─ enviroments/                # Environmental specific layouts, passed onto default.html after processing
 |  |  |
 |  |  ├─ clinicians.html          # Professionals and press
 |  |  ├─ patients.html            # Patients and carers
-|  |  ├─ gaitq.html               # Default for GaitQ submenu
+|  |  ├─ gaitq.html               # Generic GaitQ, applies to all GaitQ submenu pages
 |  |
-|  ├─ landing.html                # Landing page
+|  ├─ landing.html                # Landing page. Passed onto default.html after processing
 |  |
-|  ├─ default.html                # Final pass for all pages, also this is where Jekyll looks if no Front Matter def
+|  ├─ default.html                # Wraps {{ content }} with header, nav and scripts. For all pages, also this is where Jekyll looks if no Front Matter def. passed onto compress.html after processing.
+|  |
+|  ├─ compress.html               # Final step for all pages. Strips html comments, carriage returns and white space.
 |
 ├─ _posts/                        # Blog entries, undeveloped
 |

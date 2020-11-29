@@ -43,7 +43,7 @@
   {% include head/styles/global.html %}
 
   {% if page.env %}
-  {% include head/styles/{{ page.env }}.html %}
+  {% include head/styles/conditional.html %}
   {% endif %}
 
   {% if page.layout == "landing" %}

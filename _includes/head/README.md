@@ -26,6 +26,6 @@ This is how we control the indexing of our pages with search engines, in particu
 
 ## styles
 
-Collection of `<link rel="stylesheet"` to style each page. We do this so that we only load the css needed for a given page. Each file is named with the environment it is expected to be used in. In our page markup we define our `env:`.
+Collection of `<link rel="stylesheet"` to style each page. We do this so that we only load the css needed for a given page. By default, all pages receive global.html. With front matter we include environmental stylesheets with `env: gaitq | patients | clinicians`. The existence of `page.env` triggers conditional.html. In our page markup we define our `env:`.
 
 All pages get the global style along with their environment.
