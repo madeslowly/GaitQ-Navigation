@@ -7,7 +7,7 @@ This repo only deals with the website navigation and structure. We have three di
 How this repo is organised and what the various files are. All posts, layouts, includes, stylesheets, assets, and whatever else is grouped nicely under the root folder. The compiled Jekyll site outputs to `_site/`, which is never pushed to this repo, see https://www.gaitq.madeslowly.xyz/navbar.
 
 ```
-GaitQ/
+https://github.com/madeslowly/GaitQ-Navigation/
 |
 ├─ _config.yml/                   # Jekyll build settings, site. ...
 |
@@ -17,7 +17,7 @@ GaitQ/
 |
 ├─ _includes/                     # HTML and Liquid templating
 |  |
-|  ├─ head/                       # All header content
+|  ├─ head/                       # Header partials
 |  |  |
 |  |  ├─ descriptor/              # Site wide descriptions
 |  |  |  |
@@ -56,7 +56,7 @@ GaitQ/
 |
 ├─ _sass/                         # Sass partials
 |  |
-|  ├─ navigation/                 # All header content
+|  ├─ navigation/                 # navbar partials
 |  |  |
 |  |  ├─ _variable.sass           # <nav> settings
 |  |  ├─ burger.sass              # Mobile burger
@@ -66,7 +66,7 @@ GaitQ/
 |  |  ├─ patients.sass            # Patients nav CSS & Breakpoint 768
 |  |  ├─ gaitq.sass               # GaitQ nav CSS & Breakpoint 768
 |  |
-|  ├─ typography/                 # All header content
+|  ├─ typography/                 # Typography partials
 |  |  |
 |  |  ├─ _variable.sass           # Typography settings
 |  |  ├─ resets.sass              # User agent resets
@@ -87,7 +87,7 @@ GaitQ/
 |  |
 |  ├─ JS/                         # All our JavaScript
 |  |
-|  ├─ vendor/                     # Third party CSS and JS code, never edit! If we need to overwrite something we add our own CSS or JS to do so.
+|  ├─ vendor/                     # Third party CSS and JS code, never edit these, bad things WILL happen! If we need to overwrite something we add our own CSS or JS to do so.
 ```
 ---
 
@@ -117,7 +117,7 @@ Pages are given titles according to,
 
 #### description:
 
-Site wide description, used in head description meta, og:description, twitter:description and structured data. Overwritten by page front matter, description:
+Site wide description, used in head description, og:description, twitter:description and structured data. Overwritten by page front matter, `description:`
 
 #### url:
 
@@ -138,19 +138,19 @@ Used when we are developing a partial.
 
 #### author:
 
-Author of this Jekyll project. Content authors can be added to _data/aithors.yml and assigned in a pages front matter.
+Author of this Jekyll project. Content authors can be added to _data/authors.yml and assigned in a pages front matter.
 
 #### postal_add:
 
-Postal address of the website owning person or organisation. Used in structured data.
+Postal address of GaitQ Ltd. Used in structured data.
 
 #### opening_hours:
 
-Used in structured data. This lets google know when we are open. 
+Used in structured data. This lets google know when we are open.
 
 #### logo
 
-Site wide logo, used as a default image for Twitter and Facebook. Can be over written by a pages front matter: `image`.
+Site wide logo, used as a default image for Twitter and Facebook. Can be over written by a pages front matter: `image:`.
 
 #### Google Analytics and Webmaster Tools
 
