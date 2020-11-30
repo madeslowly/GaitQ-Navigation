@@ -1,59 +1,43 @@
+// Landing page with 768 breakpoint
 
-$landing-height: 90vh - $navbar-height
+// Structurally we have one div, .landing-wrapper, wrapping 2 others, .landing-bg and .landing-content
+
+// Using Custom Properties to scale properly inside mobile viewports
+
+// Fallback for browsers that do not support Custom Properties
+$landing-height: 90vh
 
 .landing-wraper
-  // fallback
   top: $navbar-height
-  background-color: white
-  //background-image: url($baseurl + 'assets/img/masthead_mobile.jpg')
-  //background-position: center
-  //background-repeat: no-repeat
-  //background-size: auto 80vh
-  height: 100vh - $navbar-height
-  //max-height: 100vh - $navbar-height
-  display: flex
-  //align-items: flex-end
+  background-color: $white
+  height: $landing-height
+  height: calc( var(--vh, 1vh) * 90 )
   position: fixed
-  //margin-top: 10vh
 
 .landing-bg
-  // fallback
-  //top: $navbar-height
-  //background-color: white
   background-image: url($baseurl + 'assets/img/masthead_mobile.jpg')
-  //background-position: center
   background-repeat: no-repeat
   background-size: cover
-  height: 90vh - $navbar-height
+  height: 90% /* of .landing-wrapper */
   width: 100vw
-  //max-height: 100vh
-  display: flex
-  align-items: flex-end
-  //position: fixed
-  //margin-top: 10vh
 
 .landing-content
-
-  margin: 0 2vw 0 25vw
-  padding: 2rem
-  //height: 30vh
-  width: 80vw
+  padding: 0 2rem
+  width: 70vw
   background-color: $opd-orange-confidence
   color: $white
-  transform: translateY(8vh)
+  position: absolute
+  bottom: 5%
+  right: 1%
+  border-radius: 2px
   &:after
     background: inherit
-    boxshadow: none
     content: ""
     display: flex
-    height: 16px
-    width: 16px
-    //left: 5px
+    height: 20px
+    width: 20px
     position: absolute
-    //bottom: 100%
-    border-radius: 2px
-    transform: translateY(2vh) rotate(-45deg)
-    z-index: -1
+    transform: translateY(-10px) rotate(-45deg)
 
 .landing-content
   span
@@ -61,53 +45,17 @@ $landing-height: 90vh - $navbar-height
 
 @media screen and ( min-width: 768px )
 
-  .landing-wraper
-    // fallback
-    top: $navbar-height
-    background-color: $navbar-color
-    //background-image: url($baseurl + 'assets/img/masthead_mobile.jpg')
-    //background-position: center
-    //background-repeat: no-repeat
-    //background-size: auto 80vh
-    height: 100vh - $navbar-height
-    //max-height: 100vh - $navbar-height
-    display: flex
-    align-items: flex-start
-    position: fixed
-    //margin-top: 10vh
-
   .landing-bg
-    // fallback
-    //top: $navbar-height
-
     background-image: url($baseurl + 'assets/img/masthead.jpg')
     background-position: top
-    background-repeat: no-repeat
-    background-size: cover
-    height: 100vh - $navbar-height
-    width: 100vw
-    //margin-left: 20vw
-    //max-height: 100vh
-    display: flex
-    //align-items: flex-end
-    //position: fixed
-    //margin-top: 10vh
+    height: 100%
 
   .landing-content
-
-    margin: 0
-    padding:  4rem
-    //padding-left: 5rem
-    //height: 40vh
+    padding: 4rem
     width: 30vw
-    background-color: $opd-orange-confidence
-    color: $white
-    transform: translate(8vw, -10vh)
+    right: 60vw
     &:after
-
       display: none
-
-
 
   .landing-content
     span
