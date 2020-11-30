@@ -12,20 +12,15 @@
     display: flex
 
   .nav-group-content
-    background-color: rgb(255, 255, 255)
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2)
+    background-color: $pure-white
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)
     display: block
     visibility: hidden
-    border-radius: 4px
+    opacity: 0
+    border-radius: 6px
     z-index: 1
-    //transition: visibility .1s ease-in
-    transform: translateY(10px)
-    transition: transform .2s ease-in
-
-
     &:before
       background: inherit
-      boxshadow: none
       content: ""
       display: block
       height: 16px
@@ -38,16 +33,14 @@
       z-index: -1
 
   .nav-group:hover .nav-group-content
-    display: block
     visibility: visible
-    transition: visibility .2s ease-in
+    opacity: 1
     transform: translateY(-14px)
-    transition: transform .3s ease-in
-
+    transition: opacity .1s ease-in, transform .2s ease-in
 
   .nav-group-content .nav-link
-    transition: $nav-hover
+    transition: background-color .1s ease-in
 
   .nav-group-content .nav-link:hover
     background-color: $nav-sublink-bg-color
-    transition: $nav-hover
+    transition: background-color .1s ease-in

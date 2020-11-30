@@ -5,11 +5,10 @@
 @media screen and ( min-width: 768px )
 
   .navbar
-    box-shadow: 0 1px 8px $black
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .3)
 
   .nav-brand
-    width: 10vw
-    max-width: 140px
+    max-width: 160px
     z-index: 2
 
   .nav-list
@@ -19,6 +18,7 @@
     top: 0
     transform: none
     border-top: none
+    padding-right: 8rem
 
   .nav-link
     align-items: center
@@ -28,23 +28,22 @@
     margin: 0
 
   .nav-group-link
-    transition: $nav-hover
+    transition: .1s ease-in
 
   .nav-group-link:hover
-    background-color: $nav-link-bg-color
-    transition: $nav-hover
+    color: $opd-grey-neutral
+    transition: .2s ease-in
 
   .nav-group-content
     position: absolute
+    padding: 2rem 0
 
   .nav-group-content .nav-link
-    color: black
-    padding: 0
-    padding-left: 1rem
-    padding: 10px 40px 0 10px
-    text-align: left
+    color: $pure-black
+    padding: 1rem 3rem 1rem 2rem
+    margin: 0
     font-size: $font-size * .9
-    height: 5rem
+    height: $font-size * .9
 
   .burger
     display: none
