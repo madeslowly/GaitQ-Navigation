@@ -14,10 +14,14 @@
   .nav-group-content
     background-color: rgb(255, 255, 255)
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2)
-    display: none
+    display: block
+    visibility: hidden
     border-radius: 4px
     z-index: 1
-    //transform: translateY(10px)
+    //transition: visibility .1s ease-in
+    transform: translateY(10px)
+    transition: transform .2s ease-in
+
 
     &:before
       background: inherit
@@ -35,6 +39,11 @@
 
   .nav-group:hover .nav-group-content
     display: block
+    visibility: visible
+    transition: visibility .2s ease-in
+    transform: translateY(-14px)
+    transition: transform .3s ease-in
+
 
   .nav-group-content .nav-link
     transition: $nav-hover
