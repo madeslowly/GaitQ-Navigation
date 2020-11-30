@@ -99,6 +99,6 @@ compress_html:
   comments:          all
 
 autoprefixer:
-  only_production:   true
+  only_production:   false
   browsers:
     - cover 99.5%
