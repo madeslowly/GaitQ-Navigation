@@ -1,8 +1,12 @@
-# Menu structure
+# Menu structure for GaitQ.com
+
+# `navigation` is treated as primary and as such is coded into every page, via _includes/navigation/global.html, whilst _sass/navigation/ handles what is seen and where.
+
+# `legals` are included in our sitemaps and displayed selectively, typically in the footer.
 
 navigation:
 
-  - name:   GaitQ
+  - name:   About GaitQ
     url:    /
     env: gaitq
     submenu:
