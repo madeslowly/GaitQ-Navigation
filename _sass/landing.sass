@@ -5,15 +5,15 @@
 // Using Custom Properties to scale properly inside mobile viewports
 
 // Fallback for browsers that do not support Custom Properties
-$landing-height: 90vh
+$landing-height: 100vh
 
 .landing__wraper
   display: flex
   flex-direction: column
-  top: $navbar-height
+  top: 0
   background-color: $white
   height: $landing-height
-  height: calc( var(--vh, 1vh) * 90 )
+  height: calc( var(--vh, 1vh) * 100 )
   position: relative
 
 .landing__clinician, .landing__pwp
