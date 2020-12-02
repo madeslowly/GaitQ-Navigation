@@ -24,6 +24,7 @@ baseurl:             "/navbar"
 author:
   name:              Made Slowly
   email:             arran@madeslowly.co.uk
+  url:               https://www.madeslowly.co.uk/
   twitter:           made_slowly
   description:       >-
 
@@ -99,6 +100,6 @@ compress_html:
   comments:          all
 
 autoprefixer:
-  only_production:   false
+  only_production:   true
   browsers:
     - cover 99.5%
