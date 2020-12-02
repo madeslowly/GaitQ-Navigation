@@ -1,62 +1,89 @@
 // Landing page with 768 breakpoint
 
-// Structurally we have one div, .landing-wrapper, wrapping 2 others, .landing-bg and .landing-content
+// Structurally we have one div, .landing-wrapper, wrapping 2 others, .landing__clinician and .landing__pwp
 
 // Using Custom Properties to scale properly inside mobile viewports
 
 // Fallback for browsers that do not support Custom Properties
 $landing-height: 90vh
 
-.landing-wraper
+.landing__wraper
+  display: flex
+  flex-direction: column
   top: $navbar-height
   background-color: $white
   height: $landing-height
   height: calc( var(--vh, 1vh) * 90 )
   position: relative
 
-.landing-bg
-  background-image: url($baseurl + 'assets/img/masthead_mobile.jpg')
+.landing__clinician, .landing__pwp
+  display: flex
+  align-items: flex-end
   background-repeat: no-repeat
   background-size: cover
-  height: 90% /* of .landing-wrapper */
+  height: 50% /* of .landing-wrapper */
   width: 100vw
-
-.landing-content
-  padding: 0 2rem
-  width: 70vw
-  background-color: $opd-orange-confidence
+  text-decoration: none
   color: $white
-  position: absolute
-  bottom: 5%
-  right: 1%
-  border-radius: 2px
-  &:after
-    background: inherit
-    content: ""
-    display: flex
-    height: 20px
-    width: 20px
-    position: absolute
-    transform: translateY(-10px) rotate(-45deg)
+  &:hover
+    text-decoration: underline
+    color: $opd-blue-trust
 
-.landing-content
-  span
-    display: none
+.landing__overlay
+  position: absolute
+  height: 50%
+  width: 100%
+  opacity: .65
+
+.landing--strap
+  position: absolute
+  width: 100vw
+  max-width: 100vw
+  background-color: inherit
+  h2
+    padding: 1rem 2rem
+    margin: 0
+
+.landing__clinician
+  background-image: url($baseurl + 'assets/img/landing__clinician-mobile.jpg')
+  background-color: $opd-blue-confidence
+  .landing__overlay
+    background-color: $opd-blue-confidence
+
+.landing__pwp
+    background-image: url($baseurl + 'assets/img/landing__pwp-mobile.jpg')
+    background-color: $opd-orange-confidence
+    .landing__overlay
+      background-color: $opd-orange-confidence
 
 @media screen and ( min-width: 768px )
 
-  .landing-bg
-    background-image: url($baseurl + 'assets/img/masthead.jpg')
-    background-position: top
+  .landing__overlay
     height: 100%
 
-  .landing-content
-    padding: 4rem
-    width: 30vw
-    right: 60vw
-    &:after
-      display: none
+  .landing__clinician
+    background-image: url($baseurl + 'assets/img/landing__clinician-mobile.jpg')
 
-  .landing-content
-    span
-      display: inline
+  .landing__pwp
+    background-image: url($baseurl + 'assets/img/landing__pwp-mobile.jpg')
+
+  .landing__wraper
+    flex-direction: row
+
+  .landing__clinician, .landing__pwp
+    align-items: center
+    height: 100% /* of .landing-wrapper */
+    width: 50vw
+
+  .landing--strap
+    //position: absolute
+    //width: 40%
+    //max-width: 100vw
+    background-color: inherit
+    h2
+      padding: 4rem 2rem
+
+  .landing__pwp
+    justify-content: flex-end
+    .landing--strap
+      text-align: right
