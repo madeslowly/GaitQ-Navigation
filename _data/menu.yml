@@ -19,7 +19,7 @@ navigation:
       - name: Partners
         url:  /partners/
 
-  - name:   For Patients
+  - name:   People with Parkinson's
     url:    /patients/
     env: patients
     submenu:
@@ -35,7 +35,7 @@ navigation:
       - name:   Register for trials
         url:    /patients/
 
-  - name:   For Clinicians
+  - name:   Clinicians & Healthcare
     url:    /clinicians/
     env: clinicians
     submenu:
