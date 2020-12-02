@@ -1,3 +1,5 @@
+---
+---
 # Jekyll project for GaitQ
 
 This repo only deals with the website navigation and structure. We have three distinctive environments, general GaitQ pages, content that is specific to a customer of GaitQ and content for professionals and the technically curious.
@@ -49,7 +51,7 @@ https://github.com/madeslowly/GaitQ-Navigation/
 |  |
 |  ├─ landing.html                # Landing page. Passed onto default.html after processing
 |  |
-|  ├─ default.html                # Wraps {{ content }} with header, nav and scripts. For all pages, also this is where Jekyll looks if no Front Matter def. passed onto compress.html after processing.
+|  ├─ default.html                # Wraps page content with header, nav and scripts. For all pages, also this is where Jekyll looks if no Front Matter def. passed onto compress.html after processing.
 |  |
 |  ├─ compress.html               # Final step for all pages. Strips html comments, carriage returns and white space.
 |
