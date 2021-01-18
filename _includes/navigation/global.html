@@ -2,24 +2,31 @@
 
   <div class="nav-brand">
     <a href="{{ site.baseurl }}/">
+
+    {% if site.logo %}
     {% include branding/site-logo-2.svg %}
+    {% else %}
+    {{ site.title }}
+    {% endif %}
+
     </a>
+    <!--
     {% for social in site.data.menu.socials %}
     <a class="nav-socials nav-{{ social.icon }}" href="{{ social.url }}{{ social[1].username }}/">
     <i class="fab fa-{{ social.icon }}" title="{{ site.title }} {{ social.icon | capitalize }} account"></i>
     </a>
     {% endfor %}
+    -->
   </div>
   <ul class="nav-list">
 
     {% for item in site.data.menu.navigation %}
 
     <li class="nav-group">
-      <a href="{{ item.url | relative_url }}" class="nav-group-link nav-link {{ item.env }}-group-link">
+      <a href="{{ item.url | relative_url }}" class="nav-group-link nav-link">
         <span>{{ item.name }}</span></a>
 
-
-      <div class="nav-group-content {{ item.env }}-group">
+      <div class="nav-group-content ">
         {% for sub in item.submenu %}
         <a class="nav-link sub-link" href="{{ sub.url | relative_url }}">
           <span>{{ sub.name }}</span></a>

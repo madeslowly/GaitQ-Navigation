@@ -1,5 +1,4 @@
 ---
-layout:   landing
+layout:   default
 title:
-env:      gaitq
 ---

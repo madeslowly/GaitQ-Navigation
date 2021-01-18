@@ -1,72 +1,42 @@
-# Menu structure for GaitQ.com
-
-# `navigation` is treated as primary and as such is coded into every page, via _includes/navigation/global.html, whilst _sass/navigation/ handles what is seen and where.
-
-# `legals` are included in our sitemaps and displayed selectively, typically in the footer.
+# Menu structure
 
 navigation:
 
-  - name:   About GaitQ
+  - name:   About
     url:    /
-    env: gaitq
+
+  - name:   What We Do
+    url:    /what-we-do/
     submenu:
-      - name: Our Story
-        url:  /our_story/
-      - name: Team
-        url:  /team/
-      - name: Advisors
-        url:  /advisors/
-      - name: Partners
-        url:  /partners/
+      - name:   Services
+        url:    /Services/
 
-  - name:   People with Parkinson's
-    url:    /patients/
-    env: patients
-    submenu:
-      - name:   Gait freezing
+      - name:   Solutions
+        url:    /Solutions/
+
+      - name:   Products
         url:    /patients/
 
-      - name:   Our solution
-        url:    /patients/
+  - name:   Contact
+    url:    /contact/
 
-      - name:   Contact
-        url:    /patients/
-
-      - name:   Register for trials
-        url:    /patients/
-
-  - name:   Clinicians & Healthcare
-    url:    /clinicians/
-    env: clinicians
-    submenu:
-      - name:   Our technology
-        url:    /clinicians/
-
-      - name:   The science
-        url:    /clinicians/
-
-      - name:   Get involved
-        url:    /clinicians/
-
-      - name:   Contact
-        url:    /clinicians/
 
 socials:
 
   - name:   LinkedIn
     icon:   linkedin
-    username: gaitq
-    url:    https://www.linkedin.com/company/gaitq/
+    username: username
+    url:    https://www.linkedin.com/company/username/
 
   - name:   Twitter
     icon:   twitter
-    username: gait_q
-    url:    https://twitter.com/gait_q
+    username: username
+    url:    https://twitter.com/username
 
   - name:   Facebook
     icon:   facebook
-    username: GaitQLimited
-    url:    https://www.facebook.com/GaitQLimited
+    username: username
+    url:    https://www.facebook.com/username
 
 legals:
 

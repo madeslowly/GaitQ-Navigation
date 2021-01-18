@@ -44,16 +44,6 @@
 
   {% include head/styles/global.html %}
 
-  {% if page.env %}
-  {% include head/styles/conditional.html %}
-  {% endif %}
-
-  {% if page.layout == "landing" %}
-  {% include head/styles/landing.html %}
-  {% endif %}
-
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/fonts/fontawesome-free-5.11.2-web/css/all.min.css" media="none" onload="if(media!='all')media='all'" / >
-
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/fonts/fontawesome-free-5.11.2-web/css/all.min.css" media="none" onload="if(media!='all')media='all'" / >
 
   <link rel="shortcut icon" type="image/x-icon" href="{{ site.baseurl }}/{{ site.favicon }}">
@@ -64,4 +54,4 @@
 
 </head>
 
-<body class="preload" onload="animate_after_load()">
+<body>
